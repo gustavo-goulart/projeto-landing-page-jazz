@@ -11,37 +11,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/index.css" />
+    <link rel="shortcut icon" href="imagens/logo.svg" type="image/x-icon" />
     <title>Tom's Jazz School</title>
   </head>
   <body>
     <header>
-      <img src="imagens/logo.svg" alt="Tom's Jazz School" />
-      <nav class="mt-1 mx-auto">
-        <a href="#">Início</a>
-        <a href="#">Cursos</a>
-        <a href="#">Eventos</a>
-        <a href="#">Contato</a>
-      </nav>
-      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+      <div class="container">
+        <img src="imagens/logo.svg" alt="Tom's Jazz School" />
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <img src="imagens/hero-img.svg" alt="Banda de jazz tocando" />
-        <div>
-          <h1 class="mt-2">
-            Crie algo
-            <span class="text-primary decoration">impactante</span> com música
-          </h1>
-          <p class="mt-2 mb-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-            repellat, facere assumenda necessitatibus saepe labore inventore?
-          </p>
-          <a href="#" class="button">Comece agora</a>
+        <div class="container row-reverse">
+          <img src="imagens/hero-img.svg" alt="Banda de jazz tocando" />
+          <div>
+            <h1 class="mt-2">
+              Crie algo
+              <span class="text-primary decoration">impactante</span> com música
+            </h1>
+            <p class="mt-2 mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+              repellat, facere assumenda necessitatibus saepe labore inventore?
+            </p>
+            <a href="#" class="button">Comece agora</a>
+          </div>
         </div>
       </section>
       <section class="courses-section">
         <div class="cards">
-          <article>
+          <article class="card">
             <img src="imagens/piano.png" alt="ícone de teclas de piano" />
             <strong>Piano popular</strong>
             <p>
@@ -55,7 +60,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="imagens/clef.png" alt="ícone da clave de sol" />
             <strong>Teoria Musical</strong>
             <p>
@@ -69,7 +74,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="imagens/sax.png" alt="ícone de saxofone" />
             <strong>Sax alto</strong>
             <p>
@@ -83,7 +88,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="imagens/drums.png" alt="ícone de bateria" />
             <strong>bateria</strong>
             <p>
@@ -99,34 +104,46 @@
           </article>
         </div>
 
-        <h2>E <span class="text-primary">vários</span> outros!</h2>
-        <a href="#">Conhecer cursos</a>
+        <h2 class="text-center">
+          E <span class="text-primary">vários</span> outros!
+        </h2>
+        <a href="#" class="button mt-2 mx-auto">Conhecer cursos</a>
       </section>
     </main>
 
     <footer>
-      <div>
-        <img src="imagens/logo.svg" alt="Tom's Jazz School" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
-          dignissimos adipisci unde atque temporibus! Delectus, itaque.
-        </p>
+      <div class="container">
+        <div class="about-column">
+          <img
+            src="imagens/logo.svg"
+            class="mt-1 mb-1"
+            alt="Tom's Jazz School"
+          />
+          <p class="mb-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+            dignissimos adipisci unde atque temporibus! Delectus, itaque.
+          </p>
+        </div>
+        <nav class="mb-2">
+          <a href="#">Início</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <form class="newsletter-form">
+          <label for="email" class="mb-1"
+            >Receba materiais gratuitos no seu email</label
+          >
+          <input
+            type="text"
+            name="email"
+            class="mb-1"
+            id="email"
+            placeholder="Digite o seu e-mail"
+          />
+          <button class="button mb-2">Quero receber</button>
+        </form>
       </div>
-      <nav>
-        <a href="#">Início</a>
-        <a href="#">Cursos</a>
-        <a href="#">Eventos</a>
-        <a href="#">Contato</a>
-      </nav>
-      <form>
-        <label for="email">Receba materiais gratuitos no seu email</label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Digite o seu e-mail"
-        />
-      </form>
     </footer>
   </body>
 </html>
